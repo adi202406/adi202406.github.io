@@ -1,0 +1,913 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255); 
+    overflow-x: hidden;
+    
+}
+
+.cont-luar{
+}
+
+.container{
+    background-color: #ddd;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-flow: column;
+    position: fixed;
+    z-index: 2;
+    background-color:#dcdcdc;
+    width: 100%;
+    min-height: 50px;
+}
+
+.header .title{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    align-self:center ;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.header ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 0.5fr));
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    align-content: center;
+    justify-self: end;
+    grid-auto-flow: column;
+    width: 90%;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+
+.title img{
+    max-width: 50px;
+}
+
+.content{
+    background-image: linear-gradient( #40A2D8,#0c6bc3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    
+}
+.isi{
+    min-width: 40%;
+    padding: 20px;
+    
+}
+.hello{ 
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-left: 20px;
+    font-weight: 600;
+    
+}
+
+.nama span{
+    color: maroon;
+}
+.nama{
+   font-size: 3.5em;
+   text-transform:capitalize;
+   font-family: 'Lilita One', sans-serif;
+}
+
+.deskripsi{
+   font-size: 1em;
+}
+
+.hero{
+    background-image: url(img/adi2.jpeg-removebg.png);
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    border-bottom-right-radius: 5px;
+}
+
+.container-dua{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: linear-gradient(#0c6bc3,#0a5faf);
+}
+
+.isi-dua{
+    width: 100%;
+    padding: 30px;
+    align-self: center;
+    
+}
+
+.nama-about{
+    font-size: 3.5em;
+    text-transform: capitalize;
+    justify-items: center;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.nama-about h3:first-child{
+    font-size: 1.3em;
+    margin-bottom: -20px;
+    
+}
+.nama-about h3:nth-child(2){
+    font-size: 1.3em;
+    margin-left: 35px;
+}
+
+
+.panggil-adi{
+    font-size: 0.9em;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+.panggil-adi a{
+   text-decoration: none;
+   color: maroon;
+   
+}
+.panggil-adi a:hover{
+   text-decoration: none;
+   color: rgb(5, 0, 153);
+}
+
+
+.desk-about{
+    margin-top: -10px;
+}
+
+.cont-img-about{
+    display: flex;
+    width: 90%;
+}
+
+.img-about{
+    background-image: url(img/1706032079731.png);
+    background-position: center;
+    min-height: 100vh;
+    min-width: 80%;
+    background-size: cover;
+    left: -10px;
+}
+.hero-dua{
+    background-image: url(img/hero.jpeg);
+    min-height:100vh;
+    width: 100%;
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -60px;
+} 
+
+.container-tiga{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    min-height: 100vh;
+    background-image: linear-gradient(#0a5faf,#095398);
+
+}
+.header-tiga{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Mitr', sans-serif;
+    letter-spacing: 5px;
+}
+
+.isi-skills{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-areas: "html css javascript php";
+    gap: 30px;
+}
+
+.html{
+    display: grid;
+    grid-area: html;
+    max-width: 250px;
+    background-image: linear-gradient(#1563ad,#014d94);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.461) ;
+    border-radius: 5px;
+}
+.html h4{
+    justify-self: center;
+    text-transform: uppercase;
+}
+
+.html p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-html{
+    justify-self: center;
+}
+
+.img-html img{
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 150px;
+}
+.css{
+    grid-area: css;
+    display: grid;
+    max-width: 250px;
+    background-image: linear-gradient(#1563ad,#014d94);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.461) ;
+    border-radius: 5px;
+}
+.css h4{
+    justify-self: center;
+    text-transform: uppercase;
+}
+
+.css p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-css{
+    justify-self: center;
+}
+
+.img-css img{
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.javascript{
+    grid-area: javascript;
+    display: grid;
+    max-width: 250px;
+    background-image: linear-gradient(#1563ad,#014d94);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.461) ;
+    border-radius: 5px;
+}
+
+.javascript h4{
+    justify-self: center;
+    text-transform: uppercase;
+    margin-top: -40px;
+}
+
+.javascript p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    margin-top: -60px;
+}
+
+.img-js{
+    justify-self: center;
+}
+
+.img-js img{
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.php{
+    grid-area: php;
+    display: grid;
+    max-width: 250px;
+    background-image: linear-gradient(#1563ad,#014d94);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.461) ;
+    border-radius: 5px;
+}
+
+.php h4{
+    justify-self: center;
+    text-transform: uppercase;
+    margin-top: -40px;
+}
+
+.php p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    margin-top: -60px;
+}
+
+.img-php{
+    justify-self: center;
+}
+
+.img-php img{
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 150px;
+}   
+
+.cont-empat{
+    background-color:#dcdcdc;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,400px));
+    justify-items: center;
+    gap: 50px;
+    padding: 10px;
+
+}
+
+.logo img{
+    max-width: 100px;
+}
+
+.logo p{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.menu{
+    list-style: none;
+    text-align: center;
+}
+.menu h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.menu li {
+    margin-top: 25px;
+
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.contact{
+   display: grid;
+}
+.contact-us{
+    justify-self: center;
+}
+
+.contact h2{ 
+    text-transform: capitalize;
+    font-size: 1.4em;
+    text-align: center;
+}
+.contact i{
+    justify-self: start;
+    align-self: center;
+    margin-top: 15px;
+}
+.contact p.fb a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.contact p.ig a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.contact p.fb a:hover{
+    color: rgb(29, 47, 188);
+}
+.contact p.ig a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.contact p{
+    margin-left: 30px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.footer-bawah{
+    background-color:#464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bawah p{
+    color: #c4c4c4;
+    text-transform: capitalize;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 45px;
+    height: 28px;
+    opacity: 0;
+    left: -8px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color:rgb(25, 21, 21);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+
+/* Hamburger animasi */
+
+.menu-toggle span:nth-child(2){
+   transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+   transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: rgb(206, 206, 206);
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: rgb(206, 206, 206);
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+@media (max-width:900px){
+    .header ul{
+        grid-template-columns: repeat(auto-fit,minmax(50px, 1fr));
+    }
+
+    .content{
+        
+    }
+
+    .hero{
+        width: 90%;
+        min-height: 100vh;
+    }
+    .isi{
+        min-width: 50%;
+    }
+    .nama{
+        font-size: 3.3em;
+    }
+    .hello{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .deskripsi{
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    body{
+        margin: 0px;
+    }
+
+    .cont-img-about{
+        width: 95%;
+    }
+    
+    .img-about{
+        background-image: url(img/potrait\ asli.jpg);
+        background-position: center;
+        min-height: 100vh;
+        min-width: 80%;
+        background-size: cover;
+        left: -10px;
+    }
+
+    .cont-empat{
+        background-color:#dcdcdc;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(80px,220px));
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    
+    }
+    
+    .logo{
+    }
+
+    .logo img{
+        max-width: 50px;
+
+    }
+    
+    .logo p{
+        font-size: 0.5em;
+        text-align: center;
+    }
+    
+    .menu{
+        list-style: none;
+        text-align: center;
+    }
+    .menu h2{
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    
+    .menu li {
+        margin-top: 10px;
+        font-size: 0.7em;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    .contact{
+    }
+    .contact-us{
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+    
+    .contact h2{ 
+        text-transform: capitalize;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .contact i{
+        justify-self: start;
+        align-self: center;
+        font-size: 15px;
+    }
+    .contact i:nth-child(2){
+        margin-top: -5px;
+    }
+    .contact i:nth-child(4){
+        margin-top: -25px;
+    }
+    .contact i:nth-child(6){
+        margin-top: -20px;
+    }
+    .contact i:nth-child(8){
+        margin-top: -15px;
+    }
+    .contact p.fb a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .contact p.ig a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+  
+    .contact p{
+        margin-left: 25px;
+        font-size: 0.5em;
+    }
+    .contact p:nth-child(3){
+        margin-top: -15px;
+    }
+    .contact p:nth-child(5){
+        margin-top: -25px;
+    }
+    .contact p:nth-child(7){
+        margin-top: -20px;
+    }
+    .contact p:nth-child(9){
+        margin-top: -20px;
+    }
+
+    .isi-skills{
+        padding: 20px;
+    }
+}
+
+
+
+
+@media (max-width:576px){
+    .menu-toggle{
+        justify-self: end;
+        align-self: center;
+        margin-right: 10px;
+    }
+    .hero{
+        width: 100vh;
+        min-height: 100vh;
+    }
+    .isi{
+        max-width: 70%;
+        position: absolute;
+        top: 50%
+    }
+    .nama{
+        font-size: 2em;
+        color: rgb(255, 249, 238);
+    }
+    .hello{
+        font-size: 0.5em;
+        font-weight: 600;
+        margin-left: 15px;
+        color: rgb(255, 255, 255);
+    }
+    .deskripsi{
+        font-size: 0.7em;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.739);
+    }
+    body{
+        margin: 0px;
+    }
+    .title h3{
+        font-size: 0.9em;
+    }
+
+    .isi-dua{
+        width: 40%;
+        padding: 30px;
+        align-self: center;
+        
+    }
+    
+    .nama-about{
+        font-size: 1.5em;
+        text-transform: capitalize;
+        justify-items: center;
+        font-family: 'Lilita One', sans-serif;
+    }
+    
+    .nama-about h3:first-child{
+        margin-bottom: -10px;
+        
+    }
+    .nama-about h3:nth-child(2){
+        font-size: 1.3em;
+        margin-left: 35px;
+    }
+    
+    
+    .panggil-adi{
+        font-size: 0.9em;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 0.9em;
+        text-transform: capitalize;
+    }
+    
+    .panggil-adi  span{
+        color: maroon;
+    }
+    
+    .desk-about{
+        margin-top: -10px;
+        font-size: 0.8em;
+    }
+    
+    .cont-img-about{
+        display: flex;
+        width: 90%;
+    }
+    
+    .img-about{
+        background-image: url(img/potrait\ asli.jpg);
+        background-position: center;
+        min-height: 100vh;
+        min-width: 100%;
+        background-size: cover;
+        left: -10px;
+    }
+
+    .header-tiga{
+        min-width: 350px;
+    }
+    
+    .isi-skills{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .html{
+        max-width: 350px;
+    }
+    .html h4{
+        margin-top: 5px;
+    }
+    
+    .css{
+        max-width: 350px;
+    }
+    .css h4{
+        margin: 5px;
+    }
+    
+    .css p{
+        margin-top: 0;
+    }
+
+    
+    .javascript{
+        max-width: 350px;
+    }
+    
+    .javascript h4{
+        margin-top: 5px;
+    }
+    
+    .javascript p{
+        margin-top: 0;
+    }
+    
+    
+    .php{
+        max-width: 350px;
+    }
+    
+    .php h4{
+        margin-top: 0px;
+    }
+    
+    .php p{
+        margin-top: 0;
+    }
+
+    .cont-empat{
+        background-color:#dcdcdc;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(80px,110px));
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    
+    }
+    
+    .logo{
+    }
+
+    .logo img{
+        max-width: 50px;
+
+    }
+    
+    .logo p{
+        font-size: 0.5em;
+        text-align: center;
+    }
+    
+    .menu{
+        list-style: none;
+        text-align: center;
+    }
+    .menu h2{
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    
+    .menu li {
+        margin-top: 10px;
+        font-size: 0.7em;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    .contact{
+    }
+    .contact-us{
+        justify-self: center;
+        margin-bottom: 10px;
+    }
+    
+    .contact h2{ 
+        text-transform: capitalize;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .contact i{
+        justify-self: start;
+        align-self: center;
+        font-size: 15px;
+    }
+    .contact i:nth-child(2){
+        margin-top: -5px;
+    }
+    .contact i:nth-child(4){
+        margin-top: -25px;
+    }
+    .contact i:nth-child(6){
+        margin-top: -20px;
+    }
+    .contact i:nth-child(8){
+        margin-top: -15px;
+    }
+    .contact p.fb a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .contact p.ig a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .contact p{
+        margin-left: 25px;
+        font-size: 0.5em;
+    }
+    .contact p:nth-child(3){
+        margin-top: -15px;
+    }
+    .contact p:nth-child(5){
+        margin-top: -25px;
+    }
+    .contact p:nth-child(7){
+        margin-top: -20px;
+    }
+    .contact p:nth-child(9){
+        margin-top: -20px;
+    }
+
+    .footer-bawah p{
+        font-size: 0.8em;
+    }
+
+    /* responsive navbar */
+    .header ul{
+        display: flex;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+        transform: translateY(-100%);
+        transition: all 0.8s;
+        opacity: 0;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+
+    .header ul.slide {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .header{
+        padding: 5px;
+    }
+    
+}
